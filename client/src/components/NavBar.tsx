@@ -59,7 +59,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
         {/* Logo */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="font-headline italic text-lg md:text-xl font-bold text-[#1c1c19] hover:text-[#894d0d] transition-colors"
+          className="font-headline italic text-lg md:text-xl font-bold text-[#1c1c19] hover:text-[#C9A84C] transition-colors"
         >
           WENDELIN
         </button>
@@ -72,7 +72,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
               onClick={() => scrollToSection(item.id)}
               className={`font-label text-xs tracking-widest uppercase transition-all duration-300 pb-1 border-b-2 ${
                 activeSection === item.id
-                  ? "text-[#894d0d] border-[#894d0d]"
+                  ? "text-[#C9A84C] border-[#C9A84C]"
                   : "text-[#5f5e5e] border-transparent hover:text-[#1c1c19]"
               }`}
             >
@@ -84,7 +84,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
         {/* CTA Button */}
         <button
           onClick={onBookClick}
-          className="bg-[#894d0d] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+          className="bg-[#C9A84C] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
           Book Wendelin
         </button>
       </div>
@@ -97,7 +97,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
             onClick={() => scrollToSection(item.id)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               activeSection === item.id
-                ? "bg-[#894d0d] w-6"
+                ? "bg-[#C9A84C] w-6"
                 : "bg-[#d8c3b4]/30 w-1.5"
             }`}
           />

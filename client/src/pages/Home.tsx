@@ -50,7 +50,7 @@ export default function Home() {
       <section id="hero" className="min-h-screen flex flex-col md:flex-row items-stretch bg-[#fcf9f4] pt-20">
         {/* Left: Content */}
         <div className="w-full md:w-1/2 px-8 md:px-16 lg:px-24 py-16 md:py-0 flex flex-col justify-center items-start">
-          <span className="font-label text-[11px] tracking-[0.25em] uppercase text-[#894d0d] mb-6 fade-in-up">
+          <span className="font-label text-[11px] tracking-[0.25em] uppercase text-[#C9A84C] mb-6 fade-in-up">
             Transformational Speaking
           </span>
           <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-10 text-[#1c1c19] fade-in-up">
@@ -59,13 +59,13 @@ export default function Home() {
           <p className="text-lg md:text-xl text-[#524439] leading-relaxed max-w-2xl mb-8 fade-in-up">
             Wendelin Monplaisir delivers bold, transformative keynotes that challenge high-functioning women and professionals to break burnout cycles, reclaim their power, and build a life by design.
           </p>
-          <p className="text-base md:text-lg text-[#894d0d] font-label tracking-widest uppercase font-semibold mb-12 fade-in-up">
+          <p className="text-base md:text-lg text-[#C9A84C] font-label tracking-widest uppercase font-semibold mb-12 fade-in-up">
             Not just motivation. Transformation that demands ownership.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
             <button
               onClick={() => setBookingOpen(true)}
-              className="bg-[#894d0d] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+              className="bg-[#C9A84C] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
               Book Wendelin
             </button>
             <button 
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left: Content */}
             <div className="max-w-3xl fade-in-up">
-              <span className="text-sm font-label uppercase tracking-widest text-[#894d0d] font-bold mb-4 block">
+              <span className="text-sm font-label uppercase tracking-widest text-[#C9A84C] font-bold mb-4 block">
                 Signature Framework
               </span>
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold mb-8 leading-tight">
@@ -105,7 +105,7 @@ export default function Home() {
               <p className="text-lg text-[#524439] leading-relaxed mb-8">
                 This is Wendelin's signature framework — a powerful, no-excuses methodology that walks audiences through releasing the past, reclaiming their identity, and intentionally building their future.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-8 py-4">
+              <div className="border-l-4 border-[#C9A84C] pl-8 py-4">
                 <p className="text-lg font-semibold text-[#1c1c19]">
                   ✓ Your audience will walk away with the clarity and courage to release what's holding them back and take ownership of what comes next.
                 </p>
@@ -130,8 +130,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32">
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">01</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">01</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Corporate Leadership
                 </span>
               </div>
@@ -144,7 +144,7 @@ export default function Home() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 Designed for high-performing teams and leaders, this keynote exposes the hidden patterns that drive burnout, disengagement, and stalled performance — and replaces them with clarity, ownership, and execution.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-[#f6f3ee] px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-[#f6f3ee] px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your team will identify what's silently limiting performance and leave equipped to operate with clarity, accountability, and elevated execution.
                 </p>
@@ -170,8 +170,8 @@ export default function Home() {
             </div>
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">02</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">02</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Women's Conferences
                 </span>
               </div>
@@ -184,7 +184,7 @@ export default function Home() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 This deeply personal and transformative keynote speaks to the woman who holds everything together for everyone else — while silently carrying the weight of it all.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-white px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-white px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your audience will feel seen, validated, and empowered to release the pressure and step into a more aligned, powerful version of themselves.
                 </p>
@@ -196,8 +196,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">03</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">03</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Mindset & Development
                 </span>
               </div>
@@ -210,7 +210,7 @@ export default function Home() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 A powerful mindset-shifting experience that helps audiences uncover the root of their limitations and rebuild their thinking from a place of clarity and intention.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-[#f6f3ee] px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-[#f6f3ee] px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your audience will leave with the awareness and tools to break destructive cycles and consciously create the life they've been avoiding or delaying.
                 </p>
@@ -238,7 +238,7 @@ export default function Home() {
               "Tailored for Your Audience",
             ].map((benefit) => (
               <div key={benefit} className="flex items-start gap-4 fade-in-up">
-                <span className="material-symbols-outlined text-[#894d0d] text-2xl shrink-0 mt-1">
+                <span className="material-symbols-outlined text-[#C9A84C] text-2xl shrink-0 mt-1">
                   check_circle
                 </span>
                 <p className="text-lg font-semibold leading-snug">{benefit}</p>
@@ -251,7 +251,7 @@ export default function Home() {
       {/* ── TESTIMONIAL ── */}
       <section id="testimonial" className="py-24 md:py-32 bg-[#f0ede9] overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 md:px-8 text-center relative">
-          <span className="font-headline text-8xl text-[#894d0d]/10 absolute -top-8 left-1/2 -translate-x-1/2 select-none pointer-events-none">
+          <span className="font-headline text-8xl text-[#C9A84C]/10 absolute -top-8 left-1/2 -translate-x-1/2 select-none pointer-events-none">
             "
           </span>
           <div className="relative z-10 fade-in-up">
@@ -269,7 +269,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center gap-4 mt-12">
-            <div className="h-1 w-8 bg-[#894d0d]" />
+            <div className="h-1 w-8 bg-[#C9A84C]" />
             <div className="h-1 w-8 bg-[#d8c3b4]/30" />
             <div className="h-1 w-8 bg-[#d8c3b4]/30" />
           </div>
@@ -287,7 +287,7 @@ export default function Home() {
               { num: "0", label: "Compromises Made" },
             ].map((stat) => (
               <div key={stat.label} className="space-y-2 fade-in-up">
-                <p className="font-headline text-5xl text-[#894d0d]">{stat.num}</p>
+                <p className="font-headline text-5xl text-[#C9A84C]">{stat.num}</p>
                 <p className="font-label text-[10px] tracking-widest uppercase text-[#5f5e5e]">
                   {stat.label}
                 </p>
@@ -312,8 +312,8 @@ export default function Home() {
           </p>
           <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-12 fade-in-up">
             To bridge the gap between{" "}
-            <span className="italic text-[#894d0d]">raw instinct</span> and{" "}
-            <span className="italic text-[#894d0d]">architectural precision</span>.
+            <span className="italic text-[#C9A84C]">raw instinct</span> and{" "}
+            <span className="italic text-[#C9A84C]">architectural precision</span>.
           </h2>
           <p className="font-label text-lg text-[#fcf9f4]/60 leading-relaxed max-w-2xl mx-auto fade-in-up">
             We do not facilitate trends. We design legacies. Our mission is to empower the thinkers
@@ -333,7 +333,7 @@ export default function Home() {
           </p>
           <button
             onClick={() => setBookingOpen(true)}
-            className="bg-[#894d0d] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+            className="bg-[#C9A84C] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
             Book Wendelin Now
           </button>
         </div>

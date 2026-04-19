@@ -56,12 +56,12 @@ export default function Speaking() {
           <p className="text-lg md:text-xl text-[#524439] leading-relaxed max-w-3xl mb-8">
             Wendelin Monplaisir delivers bold, transformative keynotes that challenge high-functioning women and professionals to break burnout cycles, reclaim their power, and build a life by design.
           </p>
-          <p className="text-base md:text-lg text-[#894d0d] font-label tracking-widest uppercase font-semibold mb-12">
+          <p className="text-base md:text-lg text-[#C9A84C] font-label tracking-widest uppercase font-semibold mb-12">
             Not just motivation. Transformation that demands ownership.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
             <Link href="/work-with-me">
-              <button className="bg-[#894d0d] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+              <button className="bg-[#C9A84C] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
                 Book Wendelin
               </button>
             </Link>
@@ -79,7 +79,7 @@ export default function Speaking() {
       <section className="bg-[#f6f3ee] py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto">
           <div className="max-w-3xl fade-in-up mb-16">
-            <span className="text-sm font-label uppercase tracking-widest text-[#894d0d] font-bold mb-4 block">
+            <span className="text-sm font-label uppercase tracking-widest text-[#C9A84C] font-bold mb-4 block">
               Signature Framework
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold mb-8 leading-tight">
@@ -91,7 +91,7 @@ export default function Speaking() {
             <p className="text-lg text-[#524439] leading-relaxed mb-8">
               This is Wendelin's signature framework — a powerful, no-excuses methodology that walks audiences through releasing the past, reclaiming their identity, and intentionally building their future.
             </p>
-            <div className="border-l-4 border-[#894d0d] pl-8 py-4">
+            <div className="border-l-4 border-[#C9A84C] pl-8 py-4">
               <p className="text-lg font-semibold text-[#1c1c19]">
                 ✓ Your audience will walk away with the clarity and courage to release what's holding them back and take ownership of what comes next.
               </p>
@@ -107,8 +107,8 @@ export default function Speaking() {
             {/* Left: Content */}
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">01</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">01</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Corporate Leadership
                 </span>
               </div>
@@ -121,7 +121,7 @@ export default function Speaking() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 Designed for high-performing teams and leaders, this keynote exposes the hidden patterns that drive burnout, disengagement, and stalled performance — and replaces them with clarity, ownership, and execution.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-[#f6f3ee] px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-[#f6f3ee] px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your team will identify what's silently limiting performance and leave equipped to operate with clarity, accountability, and elevated execution.
                 </p>
@@ -129,8 +129,8 @@ export default function Speaking() {
             </div>
             {/* Right: Visual Accent */}
             <div className="fade-in-up hidden md:flex items-center justify-center">
-              <div className="w-full h-96 bg-gradient-to-br from-[#894d0d]/10 to-[#894d0d]/5 rounded-lg flex items-center justify-center">
-                <span className="text-6xl text-[#894d0d]/20 font-headline font-bold">Ownership</span>
+              <div className="w-full h-96 bg-gradient-to-br from-[#C9A84C]/10 to-[#C9A84C]/5 rounded-lg flex items-center justify-center">
+                <span className="text-6xl text-[#C9A84C]/20 font-headline font-bold">Ownership</span>
               </div>
             </div>
           </div>
@@ -143,15 +143,15 @@ export default function Speaking() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
             {/* Left: Visual Accent */}
             <div className="fade-in-up hidden md:flex items-center justify-center order-last md:order-first">
-              <div className="w-full h-96 bg-gradient-to-br from-[#894d0d]/10 to-[#894d0d]/5 rounded-lg flex items-center justify-center">
-                <span className="text-6xl text-[#894d0d]/20 font-headline font-bold">Power</span>
+              <div className="w-full h-96 bg-gradient-to-br from-[#C9A84C]/10 to-[#C9A84C]/5 rounded-lg flex items-center justify-center">
+                <span className="text-6xl text-[#C9A84C]/20 font-headline font-bold">Power</span>
               </div>
             </div>
             {/* Right: Content */}
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">02</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">02</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Women's Conferences
                 </span>
               </div>
@@ -164,7 +164,7 @@ export default function Speaking() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 This deeply personal and transformative keynote speaks to the woman who holds everything together for everyone else — while silently carrying the weight of it all.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-white px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-white px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your audience will feel seen, validated, and empowered to release the pressure and step into a more aligned, powerful version of themselves.
                 </p>
@@ -181,8 +181,8 @@ export default function Speaking() {
             {/* Left: Content */}
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#894d0d]/30 font-bold">03</span>
-                <span className="bg-[#894d0d]/10 text-[#894d0d] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                <span className="text-6xl font-headline italic text-[#C9A84C]/30 font-bold">03</span>
+                <span className="bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   Mindset & Development
                 </span>
               </div>
@@ -195,7 +195,7 @@ export default function Speaking() {
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 A powerful mindset-shifting experience that helps audiences uncover the root of their limitations and rebuild their thinking from a place of clarity and intention.
               </p>
-              <div className="border-l-4 border-[#894d0d] pl-6 py-4 bg-[#f6f3ee] px-6">
+              <div className="border-l-4 border-[#C9A84C] pl-6 py-4 bg-[#f6f3ee] px-6">
                 <p className="text-base font-semibold text-[#1c1c19]">
                   ✓ Your audience will leave with the awareness and tools to break destructive cycles and consciously create the life they've been avoiding or delaying.
                 </p>
@@ -203,8 +203,8 @@ export default function Speaking() {
             </div>
             {/* Right: Visual Accent */}
             <div className="fade-in-up hidden md:flex items-center justify-center">
-              <div className="w-full h-96 bg-gradient-to-br from-[#894d0d]/10 to-[#894d0d]/5 rounded-lg flex items-center justify-center">
-                <span className="text-6xl text-[#894d0d]/20 font-headline font-bold">Clarity</span>
+              <div className="w-full h-96 bg-gradient-to-br from-[#C9A84C]/10 to-[#C9A84C]/5 rounded-lg flex items-center justify-center">
+                <span className="text-6xl text-[#C9A84C]/20 font-headline font-bold">Clarity</span>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function Speaking() {
               "Tailored for Your Audience",
             ].map((benefit) => (
               <div key={benefit} className="flex items-start gap-4 fade-in-up">
-                <span className="material-symbols-outlined text-[#894d0d] text-2xl shrink-0 mt-1">
+                <span className="material-symbols-outlined text-[#C9A84C] text-2xl shrink-0 mt-1">
                   check_circle
                 </span>
                 <p className="text-lg font-semibold leading-snug">{benefit}</p>
@@ -246,7 +246,7 @@ export default function Speaking() {
             <span className="font-semibold text-[#1c1c19]">this is the conversation they didn't know they needed.</span>
           </p>
           <Link href="/work-with-me">
-            <button className="bg-[#894d0d] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+            <button className="bg-[#C9A84C] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
               Book Wendelin Now
             </button>
           </Link>

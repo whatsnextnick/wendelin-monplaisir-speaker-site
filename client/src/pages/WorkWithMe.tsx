@@ -126,7 +126,7 @@ export default function WorkWithMe() {
           <p className="text-xl md:text-2xl text-[#524439] leading-relaxed max-w-2xl">
             Beyond information, I deliver transformation. My engagements are curated psychological
             journeys designed to dismantle resistance and awaken the{" "}
-            <span className="italic text-[#894d0d]">authority</span> within your leaders and teams.
+            <span className="italic text-[#C9A84C]">authority</span> within your leaders and teams.
           </p>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function WorkWithMe() {
             {/* Keynote Card */}
             <div className="bg-white p-10 md:p-12 flex flex-col justify-between shadow-sm min-h-[500px] md:min-h-[600px] fade-in-up">
               <div>
-                <span className="material-symbols-outlined text-[#894d0d] text-5xl mb-8 block">
+                <span className="material-symbols-outlined text-[#C9A84C] text-5xl mb-8 block">
                   auto_awesome
                 </span>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold mb-6 italic">
@@ -166,7 +166,7 @@ export default function WorkWithMe() {
               </div>
               <button
                 onClick={() => toast.info("Keynote Booking", { description: "Please use the inquiry form below to book this keynote." })}
-                className="w-full bg-[#894d0d] text-white py-5 font-label uppercase tracking-widest hover:bg-[#a76526] transition-all active:scale-95"
+                className="w-full bg-[#C9A84C] text-white py-5 font-label uppercase tracking-widest hover:bg-[#D4B86A] transition-all active:scale-95"
               >
                 Book Keynote
               </button>
@@ -175,7 +175,7 @@ export default function WorkWithMe() {
             {/* Workshop Card */}
             <div className="bg-[#e5e2dd] p-10 md:p-12 flex flex-col justify-between shadow-sm min-h-[500px] md:min-h-[600px] fade-in-up">
               <div>
-                <span className="material-symbols-outlined text-[#894d0d] text-5xl mb-8 block">
+                <span className="material-symbols-outlined text-[#C9A84C] text-5xl mb-8 block">
                   groups
                 </span>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold mb-6 italic">
@@ -203,7 +203,7 @@ export default function WorkWithMe() {
               </div>
               <button
                 onClick={() => toast.info("Workshop Booking", { description: "Please use the inquiry form below to book this workshop." })}
-                className="w-full border-2 border-[#894d0d] text-[#894d0d] py-5 font-label uppercase tracking-widest hover:bg-[#894d0d] hover:text-white transition-all active:scale-95"
+                className="w-full border-2 border-[#C9A84C] text-[#C9A84C] py-5 font-label uppercase tracking-widest hover:bg-[#C9A84C] hover:text-white transition-all active:scale-95"
               >
                 Book Workshop
               </button>
@@ -218,7 +218,7 @@ export default function WorkWithMe() {
           <div className="lg:col-span-4 fade-in-up">
             <h2 className="text-4xl md:text-5xl font-headline font-bold leading-tight lg:sticky lg:top-40">
               The Process of{" "}
-              <span className="italic text-[#894d0d]">Alignment</span>
+              <span className="italic text-[#C9A84C]">Alignment</span>
             </h2>
           </div>
           <div className="lg:col-span-8 space-y-16 md:space-y-24">
@@ -245,7 +245,7 @@ export default function WorkWithMe() {
               },
             ].map((step) => (
               <div key={step.num} className="flex gap-8 md:gap-12 group fade-in-up">
-                <span className="text-7xl md:text-8xl font-headline text-[#ebe8e3] leading-none group-hover:text-[#a76526] transition-colors duration-500 shrink-0">
+                <span className="text-7xl md:text-8xl font-headline text-[#ebe8e3] leading-none group-hover:text-[#D4B86A] transition-colors duration-500 shrink-0">
                   {step.num}
                 </span>
                 <div>
@@ -285,7 +285,7 @@ export default function WorkWithMe() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#894d0d] transition-colors placeholder-[#1c1c19]/30"
+                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
                   placeholder="Your full name"
                 />
               </div>
@@ -298,7 +298,7 @@ export default function WorkWithMe() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#894d0d] transition-colors placeholder-[#1c1c19]/30"
+                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
                   placeholder="your@email.com"
                 />
               </div>
@@ -311,7 +311,7 @@ export default function WorkWithMe() {
                 type="text"
                 value={formData.organization}
                 onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#894d0d] transition-colors placeholder-[#1c1c19]/30"
+                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
                 placeholder="Company or event name"
               />
             </div>
@@ -324,14 +324,14 @@ export default function WorkWithMe() {
                 rows={6}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#894d0d] transition-colors resize-none placeholder-[#1c1c19]/30"
+                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors resize-none placeholder-[#1c1c19]/30"
                 placeholder="Event date, audience size, goals, and what transformation you're seeking..."
               />
             </div>
             <button
               type="submit"
               disabled={submitting}
-              className="bg-[#894d0d] text-white px-12 py-5 font-label font-bold text-sm tracking-widest uppercase hover:bg-[#a76526] transition-all duration-300 shadow-lg disabled:opacity-60 disabled:cursor-not-allowed active:scale-95"
+              className="bg-[#C9A84C] text-white px-12 py-5 font-label font-bold text-sm tracking-widest uppercase hover:bg-[#D4B86A] transition-all duration-300 shadow-lg disabled:opacity-60 disabled:cursor-not-allowed active:scale-95"
             >
               {submitting ? "Sending..." : "Send Inquiry"}
             </button>

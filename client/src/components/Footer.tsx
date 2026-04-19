@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand and tagline */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12 pb-8 border-b border-[#fcf9f4]/10">
           <Link href="/">
-            <div className="text-2xl font-headline italic tracking-tighter text-[#fcf9f4] hover:text-[#894d0d] transition-colors duration-500 cursor-pointer">
+            <div className="text-2xl font-headline italic tracking-tighter text-[#fcf9f4] hover:text-[#C9A84C] transition-colors duration-500 cursor-pointer">
               WENDELIN MONPLAISIR
             </div>
           </Link>
