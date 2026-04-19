@@ -3,10 +3,11 @@
  * Hero | Keynotes | Testimonial | Stats | Manifesto | CTA | Footer
  */
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import BookingModal from "@/components/BookingModal";
 
 function useScrollFadeIn() {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,10 +39,12 @@ function handlePlaceholder(e: React.MouseEvent, label: string) {
 
 export default function Home() {
   const pageRef = useScrollFadeIn();
+  const [bookingOpen, setBookingOpen] = useState(false);
 
   return (
     <div ref={pageRef} className="min-h-screen bg-[#fcf9f4] text-[#1c1c19]">
-      <NavBar />
+      <BookingModal open={bookingOpen} onClose={() => setBookingOpen(false)} />
+      <NavBar onBookClick={() => setBookingOpen(true)} />
 
       {/* ── HERO ── */}
       <section id="hero" className="min-h-screen flex flex-col md:flex-row items-stretch bg-[#fcf9f4] pt-20">
@@ -61,7 +64,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
             <button
-              onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+              onClick={() => setBookingOpen(true)}
               className="bg-[#894d0d] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
               Book Wendelin
             </button>
@@ -329,7 +332,7 @@ export default function Home() {
             Wendelin doesn't just inspire audiences — she challenges them to confront what's been controlling them and equips them to take ownership of their next level.
           </p>
           <button
-            onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+            onClick={() => setBookingOpen(true)}
             className="bg-[#894d0d] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
             Book Wendelin Now
           </button>

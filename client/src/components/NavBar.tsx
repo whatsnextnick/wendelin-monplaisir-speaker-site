@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 
-export default function NavBar() {
+export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
   const [activeSection, setActiveSection] = useState("hero");
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -83,7 +83,7 @@ export default function NavBar() {
 
         {/* CTA Button */}
         <button
-          onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+          onClick={onBookClick}
           className="bg-[#894d0d] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
           Book Wendelin
         </button>
