@@ -60,7 +60,9 @@ export default function Home() {
             Not just motivation. Transformation that demands ownership.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
-            <button className="bg-[#894d0d] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+            <button
+              onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+              className="bg-[#894d0d] text-white px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
               Book Wendelin
             </button>
             <button 
@@ -326,7 +328,9 @@ export default function Home() {
           <p className="text-lg md:text-xl text-[#524439] leading-relaxed mb-12">
             Wendelin doesn't just inspire audiences — she challenges them to confront what's been controlling them and equips them to take ownership of their next level.
           </p>
-          <button className="bg-[#894d0d] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+          <button
+            onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+            className="bg-[#894d0d] text-white px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
             Book Wendelin Now
           </button>
         </div>

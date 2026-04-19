@@ -82,7 +82,9 @@ export default function NavBar() {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-[#894d0d] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
+        <button
+          onClick={() => (window as any).tf?.createPopup("qaNTdAK6").open()}
+          className="bg-[#894d0d] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#a76526] active:scale-95">
           Book Wendelin
         </button>
       </div>
