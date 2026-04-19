@@ -176,7 +176,7 @@ export default function Home() {
                 The Cost of Being <span className="italic font-normal">Unbreakable</span>
               </h3>
               <p className="text-lg text-[#524439] mb-6 leading-relaxed">
-                Why the Strongest Women Are Often the Most Exhausted — and How to Reclaim Their Power, Release the Pressure, and Build a Life They Actually Want
+                Why the Strongest Women Are Often the Most Exhausted — and How to Release the Pressure, Reclaim Their Power, and Build a Life They Actually Want
               </p>
               <p className="text-base text-[#524439] mb-8 leading-relaxed">
                 This deeply personal and transformative keynote speaks to the woman who holds everything together for everyone else — while silently carrying the weight of it all.
