@@ -114,8 +114,8 @@ export default function Home() {
             {/* Right: Image */}
             <div className="fade-in-up hidden md:flex items-center justify-center">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_q2cpyeq2cpyeq2cp_b21197b9.png"
-                alt="Burn It. Build It. — Match igniting transformation"
+                src="https://images.unsplash.com/photo-1684609365994-a144ee021c88?auto=format&fit=crop&w=800&q=80"
+                alt="Burn It. Build It. — Woman's elegantly manicured nails"
                 className="w-full h-auto max-w-md object-cover rounded-lg shadow-lg"
               />
             </div>
