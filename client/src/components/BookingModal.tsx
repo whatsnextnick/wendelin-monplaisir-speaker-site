@@ -32,14 +32,14 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-[#e5e2dd] bg-[#fcf9f4] shrink-0">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-[#F2EBE0] bg-[#FAF7F2] shrink-0">
           <div>
-            <h2 className="font-headline font-bold text-lg text-[#1c1c19]">Book Wendelin Monplaisir</h2>
-            <p className="text-xs text-[#857467] mt-0.5">Complete the inquiry form below and our team will follow up shortly.</p>
+            <h2 className="font-headline font-bold text-lg text-[#1A1A1A]">Book Wendelin Monplaisir</h2>
+            <p className="text-xs text-[#A8A8BC] mt-0.5">Complete the inquiry form below and our team will follow up shortly.</p>
           </div>
           <button
             onClick={onClose}
-            className="text-[#524439] hover:text-[#1c1c19] transition-colors p-1 ml-4 shrink-0"
+            className="text-[#1A1A1A] hover:text-[#1A1A1A] transition-colors p-1 ml-4 shrink-0"
             aria-label="Close"
           >
             <span className="material-symbols-outlined text-2xl">close</span>

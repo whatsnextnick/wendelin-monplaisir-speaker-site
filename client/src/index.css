@@ -1,7 +1,7 @@
 /* 
  * WENDELIN MONPLAISIR — Design System
- * Philosophy: Editorial Brutalism — warm ivory canvas, amber-brown authority, 
- * grayscale-to-color reveals, oversized italic Newsreader, tight Inter labels.
+ * Philosophy: Editorial Brutalism — cream canvas, midnight navy authority,
+ * silver chrome accents, grayscale-to-color reveals, oversized italic Newsreader, tight Inter labels.
  * No centered layouts. Asymmetric grids. Confrontational whitespace.
  */
 
@@ -46,37 +46,37 @@
 :root {
   --radius: 0px;
 
-  /* Brand Colors — warm earth tones */
-  --primary: oklch(0.44 0.11 48);        /* #C9A84C amber-brown */
-  --primary-foreground: oklch(1 0 0);    /* white */
-  --primary-container: oklch(0.54 0.12 48); /* #D4B86A darker amber */
+  /* M4 — Midnight + Silver Chrome (exact hex values) */
+  --primary: #1C1C2E;
+  --primary-foreground: #FAF7F2;
+  --primary-container: #A8A8BC;
 
   /* Surfaces */
-  --background: oklch(0.987 0.006 80);   /* #fcf9f4 warm ivory */
-  --foreground: oklch(0.15 0.005 80);    /* #1c1c19 near-black */
-  --surface: oklch(0.987 0.006 80);      /* #fcf9f4 */
-  --surface-low: oklch(0.965 0.007 80);  /* #f6f3ee */
-  --surface-high: oklch(0.92 0.008 80);  /* #ebe8e3 */
-  --on-surface: oklch(0.15 0.005 80);    /* #1c1c19 */
-  --on-surface-variant: oklch(0.37 0.04 50); /* #524439 */
-  --outline-variant: oklch(0.85 0.04 50); /* #d8c3b4 */
+  --background: #FAF7F2;
+  --foreground: #1A1A1A;
+  --surface: #FAF7F2;
+  --surface-low: #F2EBE0;
+  --surface-high: #EBE4D8;
+  --on-surface: #1A1A1A;
+  --on-surface-variant: #A8A8BC;
+  --outline-variant: #A8A8BC;
 
   /* Component tokens */
-  --card: oklch(0.987 0.006 80);
-  --card-foreground: oklch(0.15 0.005 80);
-  --popover: oklch(0.987 0.006 80);
-  --popover-foreground: oklch(0.15 0.005 80);
-  --secondary: oklch(0.42 0.01 80);      /* #5f5e5e muted gray */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.94 0.006 80);
-  --muted-foreground: oklch(0.42 0.01 80);
-  --accent: oklch(0.94 0.006 80);
-  --accent-foreground: oklch(0.15 0.005 80);
+  --card: #FAF7F2;
+  --card-foreground: #1A1A1A;
+  --popover: #FAF7F2;
+  --popover-foreground: #1A1A1A;
+  --secondary: #A8A8BC;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F2EBE0;
+  --muted-foreground: #1A1A1A;
+  --accent: #F2EBE0;
+  --accent-foreground: #1A1A1A;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.85 0.04 50);
-  --input: oklch(0.85 0.04 50);
-  --ring: oklch(0.44 0.11 48);
+  --destructive-foreground: #FAF7F2;
+  --border: #A8A8BC;
+  --input: #A8A8BC;
+  --ring: #1C1C2E;
 }
 
 @layer base {

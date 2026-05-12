@@ -53,7 +53,7 @@ const faqs = [
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-[#f6f3ee] overflow-hidden transition-all duration-300">
+    <div className="bg-[#F2EBE0] overflow-hidden transition-all duration-300">
       <button
         className="flex justify-between items-center w-full p-6 md:p-8 text-left cursor-pointer"
         onClick={() => setOpen(!open)}
@@ -73,7 +73,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 md:px-8 pb-8 text-[#524439] leading-relaxed text-base md:text-lg">
+        <div className="px-6 md:px-8 pb-8 text-[#1A1A1A] leading-relaxed text-base md:text-lg">
           {a}
         </div>
       </div>
@@ -100,7 +100,7 @@ export default function WorkWithMe() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
-      toast.error("Please fill in all required fields.");
+      toast.warning("Please fill in all required fields.");
       return;
     }
     setSubmitting(true);
@@ -113,7 +113,7 @@ export default function WorkWithMe() {
   };
 
   return (
-    <div ref={pageRef} className="min-h-screen bg-[#fcf9f4] text-[#1c1c19]">
+    <div ref={pageRef} className="min-h-screen bg-[#FAF7F2] text-[#1A1A1A]">
       <NavBar />
 
       {/* ── HERO ── */}
@@ -123,28 +123,28 @@ export default function WorkWithMe() {
             Your Audience Deserves{" "}
             <span className="italic font-normal">More</span> Than a Good Speech.
           </h1>
-          <p className="text-xl md:text-2xl text-[#524439] leading-relaxed max-w-2xl">
+          <p className="text-xl md:text-2xl text-[#1A1A1A] leading-relaxed max-w-2xl">
             Beyond information, I deliver transformation. My engagements are curated psychological
             journeys designed to dismantle resistance and awaken the{" "}
-            <span className="italic text-[#C9A84C]">authority</span> within your leaders and teams.
+            <span className="italic text-[#A8A8BC]">authority</span> within your leaders and teams.
           </p>
         </div>
       </section>
 
       {/* ── SERVICES GRID ── */}
-      <section className="px-6 md:px-12 py-16 md:py-24 bg-[#f6f3ee]">
+      <section className="px-6 md:px-12 py-16 md:py-24 bg-[#F2EBE0]">
         <div className="max-w-screen-2xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Keynote Card */}
             <div className="bg-white p-10 md:p-12 flex flex-col justify-between shadow-sm min-h-[500px] md:min-h-[600px] fade-in-up">
               <div>
-                <span className="material-symbols-outlined text-[#C9A84C] text-5xl mb-8 block">
+                <span className="material-symbols-outlined text-[#A8A8BC] text-5xl mb-8 block">
                   auto_awesome
                 </span>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold mb-6 italic">
                   The Transformation Keynote
                 </h2>
-                <p className="text-lg text-[#524439] mb-10 leading-relaxed">
+                <p className="text-lg text-[#1A1A1A] mb-10 leading-relaxed">
                   A visceral, immersive experience that combines storytelling with behavioral
                   psychology. Perfect for high-stakes conferences and leadership summits seeking a
                   catalyst for change.
@@ -156,7 +156,7 @@ export default function WorkWithMe() {
                     { label: "Ideal For", value: "Annual Summits, Global Meetings" },
                   ].map((row) => (
                     <div key={row.label} className="flex items-center gap-4">
-                      <span className="font-label text-xs uppercase tracking-widest text-[#857467] w-20 shrink-0">
+                      <span className="font-label text-xs uppercase tracking-widest text-[#A8A8BC] w-20 shrink-0">
                         {row.label}
                       </span>
                       <span className="text-base md:text-lg font-medium">{row.value}</span>
@@ -166,22 +166,22 @@ export default function WorkWithMe() {
               </div>
               <button
                 onClick={() => toast.info("Keynote Booking", { description: "Please use the inquiry form below to book this keynote." })}
-                className="w-full bg-[#C9A84C] text-white py-5 font-label uppercase tracking-widest hover:bg-[#D4B86A] transition-all active:scale-95"
+                className="w-full bg-[#1C1C2E] text-[#FAF7F2] py-5 font-label uppercase tracking-widest hover:bg-[#A8A8BC] hover:text-[#1A1A1A] transition-all active:scale-95"
               >
                 Book Keynote
               </button>
             </div>
 
             {/* Workshop Card */}
-            <div className="bg-[#e5e2dd] p-10 md:p-12 flex flex-col justify-between shadow-sm min-h-[500px] md:min-h-[600px] fade-in-up">
+            <div className="bg-[#F2EBE0] p-10 md:p-12 flex flex-col justify-between shadow-sm min-h-[500px] md:min-h-[600px] fade-in-up">
               <div>
-                <span className="material-symbols-outlined text-[#C9A84C] text-5xl mb-8 block">
+                <span className="material-symbols-outlined text-[#A8A8BC] text-5xl mb-8 block">
                   groups
                 </span>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold mb-6 italic">
                   The Mastery Workshop
                 </h2>
-                <p className="text-lg text-[#524439] mb-10 leading-relaxed">
+                <p className="text-lg text-[#1A1A1A] mb-10 leading-relaxed">
                   An intensive, hands-on architectural session for small to mid-sized groups. We
                   dive deep into the specific blockages preventing your organization's{" "}
                   <em>healing</em> and growth.
@@ -193,7 +193,7 @@ export default function WorkWithMe() {
                     { label: "Ideal For", value: "Executive Boards, Management Teams" },
                   ].map((row) => (
                     <div key={row.label} className="flex items-center gap-4">
-                      <span className="font-label text-xs uppercase tracking-widest text-[#857467] w-20 shrink-0">
+                      <span className="font-label text-xs uppercase tracking-widest text-[#A8A8BC] w-20 shrink-0">
                         {row.label}
                       </span>
                       <span className="text-base md:text-lg font-medium">{row.value}</span>
@@ -203,7 +203,7 @@ export default function WorkWithMe() {
               </div>
               <button
                 onClick={() => toast.info("Workshop Booking", { description: "Please use the inquiry form below to book this workshop." })}
-                className="w-full border-2 border-[#C9A84C] text-[#C9A84C] py-5 font-label uppercase tracking-widest hover:bg-[#C9A84C] hover:text-white transition-all active:scale-95"
+                className="w-full border-2 border-[#A8A8BC] text-[#A8A8BC] py-5 font-label uppercase tracking-widest hover:bg-[#A8A8BC] hover:text-[#1A1A1A] transition-all active:scale-95"
               >
                 Book Workshop
               </button>
@@ -218,7 +218,7 @@ export default function WorkWithMe() {
           <div className="lg:col-span-4 fade-in-up">
             <h2 className="text-4xl md:text-5xl font-headline font-bold leading-tight lg:sticky lg:top-40">
               The Process of{" "}
-              <span className="italic text-[#C9A84C]">Alignment</span>
+              <span className="italic text-[#A8A8BC]">Alignment</span>
             </h2>
           </div>
           <div className="lg:col-span-8 space-y-16 md:space-y-24">
@@ -245,14 +245,14 @@ export default function WorkWithMe() {
               },
             ].map((step) => (
               <div key={step.num} className="flex gap-8 md:gap-12 group fade-in-up">
-                <span className="text-7xl md:text-8xl font-headline text-[#ebe8e3] leading-none group-hover:text-[#D4B86A] transition-colors duration-500 shrink-0">
+                <span className="text-7xl md:text-8xl font-headline text-[#F2EBE0] leading-none group-hover:text-[#A8A8BC] transition-colors duration-500 shrink-0">
                   {step.num}
                 </span>
                 <div>
                   <h3 className="text-2xl md:text-3xl font-headline font-bold mb-4">
                     {step.title}
                   </h3>
-                  <p className="text-lg md:text-xl text-[#524439] leading-relaxed">{step.desc}</p>
+                  <p className="text-lg md:text-xl text-[#1A1A1A] leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -261,13 +261,13 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── CONTACT FORM ── */}
-      <section className="px-6 md:px-12 py-24 md:py-32 bg-[#f6f3ee]">
+      <section className="px-6 md:px-12 py-24 md:py-32 bg-[#F2EBE0]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6">
               Let's Make Your Event <span className="italic">Unforgettable</span>
             </h2>
-            <p className="text-lg text-[#524439]">
+            <p className="text-lg text-[#1A1A1A]">
               Fill in the form below and Wendelin's team will respond within 48 hours.
             </p>
           </div>
@@ -277,7 +277,7 @@ export default function WorkWithMe() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <label className="font-label text-[10px] tracking-widest uppercase text-[#524439] block mb-3">
+                <label className="font-label text-[10px] tracking-widest uppercase text-[#1A1A1A] block mb-3">
                   Full Name *
                 </label>
                 <input
@@ -285,12 +285,12 @@ export default function WorkWithMe() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
+                  className="w-full border-b border-[#A8A8BC] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#A8A8BC] transition-colors placeholder-[#1A1A1A]/30"
                   placeholder="Your full name"
                 />
               </div>
               <div>
-                <label className="font-label text-[10px] tracking-widest uppercase text-[#524439] block mb-3">
+                <label className="font-label text-[10px] tracking-widest uppercase text-[#1A1A1A] block mb-3">
                   Email Address *
                 </label>
                 <input
@@ -298,25 +298,25 @@ export default function WorkWithMe() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
+                  className="w-full border-b border-[#A8A8BC] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#A8A8BC] transition-colors placeholder-[#1A1A1A]/30"
                   placeholder="your@email.com"
                 />
               </div>
             </div>
             <div>
-              <label className="font-label text-[10px] tracking-widest uppercase text-[#524439] block mb-3">
+              <label className="font-label text-[10px] tracking-widest uppercase text-[#1A1A1A] block mb-3">
                 Organization / Event
               </label>
               <input
                 type="text"
                 value={formData.organization}
                 onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors placeholder-[#1c1c19]/30"
+                className="w-full border-b border-[#A8A8BC] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#A8A8BC] transition-colors placeholder-[#1A1A1A]/30"
                 placeholder="Company or event name"
               />
             </div>
             <div>
-              <label className="font-label text-[10px] tracking-widest uppercase text-[#524439] block mb-3">
+              <label className="font-label text-[10px] tracking-widest uppercase text-[#1A1A1A] block mb-3">
                 Tell Wendelin About Your Event *
               </label>
               <textarea
@@ -324,14 +324,14 @@ export default function WorkWithMe() {
                 rows={6}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full border-b border-[#d8c3b4] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#C9A84C] transition-colors resize-none placeholder-[#1c1c19]/30"
+                className="w-full border-b border-[#A8A8BC] bg-transparent py-3 font-label text-sm focus:outline-none focus:border-[#A8A8BC] transition-colors resize-none placeholder-[#1A1A1A]/30"
                 placeholder="Event date, audience size, goals, and what transformation you're seeking..."
               />
             </div>
             <button
               type="submit"
               disabled={submitting}
-              className="bg-[#C9A84C] text-white px-12 py-5 font-label font-bold text-sm tracking-widest uppercase hover:bg-[#D4B86A] transition-all duration-300 shadow-lg disabled:opacity-60 disabled:cursor-not-allowed active:scale-95"
+              className="bg-[#1C1C2E] text-[#FAF7F2] px-12 py-5 font-label font-bold text-sm tracking-widest uppercase hover:bg-[#A8A8BC] hover:text-[#1A1A1A] transition-all duration-300 shadow-lg disabled:opacity-60 disabled:cursor-not-allowed active:scale-95"
             >
               {submitting ? "Sending..." : "Send Inquiry"}
             </button>

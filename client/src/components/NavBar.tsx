@@ -14,7 +14,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
       setIsScrolled(window.scrollY > 50);
 
       // Detect active section
-      const sections = ["hero", "keynotes", "testimonial", "stats", "manifesto"];
+      const sections = ["hero", "keynotes", "bio", "testimonial", "manifesto"];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -42,8 +42,8 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
   const navItems = [
     { id: "hero", label: "Home" },
     { id: "keynotes", label: "Keynotes" },
+    { id: "bio", label: "About" },
     { id: "testimonial", label: "Testimonial" },
-    { id: "stats", label: "Impact" },
     { id: "manifesto", label: "Mission" },
   ];
 
@@ -51,17 +51,23 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#fcf9f4]/95 backdrop-blur-md border-b border-[#d8c3b4]/10 shadow-sm"
-          : "bg-transparent"
+          ? "bg-[#0D0D0D]/98 backdrop-blur-md border-b border-[#A8A8BC]/10 shadow-lg"
+          : "bg-[#0D0D0D]/80 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 md:py-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-3 flex items-center justify-between">
         {/* Logo */}
+        {/* Logo — image has ~21% transparent padding top, 15% left; crop it out */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="font-headline italic text-lg md:text-xl font-bold text-[#1c1c19] hover:text-[#C9A84C] transition-colors"
+          className="hover:opacity-90 transition-opacity flex-shrink-0"
+          style={{ overflow: "hidden", width: "65px", height: "55px" }}
         >
-          WENDELIN
+          <img
+            src="/WMsite_logo.png"
+            alt="Wendelin Monplaisir"
+            style={{ display: "block", width: "94px", height: "94px", marginTop: "-20px", marginLeft: "-14px" }}
+          />
         </button>
 
         {/* Nav Links */}
@@ -72,8 +78,8 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
               onClick={() => scrollToSection(item.id)}
               className={`font-label text-xs tracking-widest uppercase transition-all duration-300 pb-1 border-b-2 ${
                 activeSection === item.id
-                  ? "text-[#C9A84C] border-[#C9A84C]"
-                  : "text-[#5f5e5e] border-transparent hover:text-[#1c1c19]"
+                  ? "text-[#A8A8BC] border-[#A8A8BC]"
+                  : "text-[#FAF7F2]/60 border-transparent hover:text-[#FAF7F2]"
               }`}
             >
               {item.label}
@@ -84,21 +90,21 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
         {/* CTA Button */}
         <button
           onClick={onBookClick}
-          className="bg-[#C9A84C] text-white px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#D4B86A] active:scale-95">
+          className="bg-[#1C1C2E] text-[#FAF7F2] px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#A8A8BC] hover:text-[#1A1A1A] active:scale-95">
           Book Wendelin
         </button>
       </div>
 
       {/* Mobile Menu Indicator */}
-      <div className="md:hidden px-6 py-3 flex gap-2 justify-center">
+      <div className="md:hidden px-6 pb-2 flex gap-2 justify-center">
         {navItems.map((item) => (
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               activeSection === item.id
-                ? "bg-[#C9A84C] w-6"
-                : "bg-[#d8c3b4]/30 w-1.5"
+                ? "bg-[#A8A8BC] w-6"
+                : "bg-[#FAF7F2]/20 w-1.5"
             }`}
           />
         ))}
