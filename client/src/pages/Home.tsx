@@ -223,6 +223,8 @@ export default function Home() {
             </div>
           </div>
 
+          <SectionBlend from={C} to={W} height={60} />
+
           {/* Keynote 02 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-24 md:py-32">
             <div className="fade-in-up hidden md:flex items-center justify-center order-last md:order-first">
