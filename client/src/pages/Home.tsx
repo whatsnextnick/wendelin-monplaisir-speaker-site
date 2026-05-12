@@ -153,9 +153,12 @@ export default function Home() {
               <span className="text-sm font-label uppercase tracking-widest text-[#A8A8BC] font-bold mb-4 block">
                 Signature Framework
               </span>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold mb-8 leading-tight">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold mb-3 leading-tight">
                 Burn It. Build It.
               </h2>
+              <p className="font-label text-sm tracking-widest uppercase text-[#A8A8BC] mb-8">
+                Powered by <em className="not-uppercase italic font-normal tracking-normal">Breathe. Burn. Build.</em>
+              </p>
               <p className="text-2xl md:text-3xl italic text-[#1A1A1A] mb-8 leading-relaxed">
                 Release What Broke You. Claim What Will Define You
               </p>
@@ -241,17 +244,20 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
-                The Cost of Being <span className="italic font-normal">Unbreakable</span>
+                Reclaim Your <span className="italic font-normal">Power</span>
               </h3>
               <p className="text-lg text-[#1A1A1A] mb-6 leading-relaxed">
-                Why the Strongest Women Are Often the Most Exhausted — and How to Release the Pressure, Reclaim Their Power, and Build a Life They Actually Want
+                Turn Fear Into Authority. Turn Doubt into Presence. Become Undeniable.
+              </p>
+              <p className="text-base text-[#1A1A1A] mb-6 leading-relaxed">
+                How High-Achieving Women Turn Fear Into Authority Without Second Guessing Themselves to Reclaim Their Power — So They Lead, Communicate, and Execute with Confidence in Every Room They Walk Into.
               </p>
               <p className="text-base text-[#1A1A1A] mb-8 leading-relaxed">
-                This deeply personal and transformative keynote speaks to the woman who holds everything together for everyone else — while silently carrying the weight of it all.
+                Designed for ambitious women, leaders, entrepreneurs, and professionals, this keynote exposes the silent patterns that keep women overthinking, shrinking themselves, seeking validation, and questioning their worth — replacing them with confidence, ownership, emotional resilience, and decisive self-leadership.
               </p>
               <div className="border-l-4 border-[#A8A8BC] pl-6 py-4 bg-white px-6">
                 <p className="text-base font-semibold text-[#1A1A1A]">
-                  ✓ Your audience will feel seen, validated, and empowered to release the pressure and step into a more aligned, powerful version of themselves.
+                  ✓ Your audience will identify what's been limiting how they show up, speak up, and advocate for themselves — and leave equipped to operate with greater confidence, clarity, boundaries, authority, and power in every area of their lives.
                 </p>
               </div>
             </div>
