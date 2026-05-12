@@ -30,6 +30,26 @@ function useScrollFadeIn() {
   return ref;
 }
 
+const C = "#FAF7F2"; // cream
+const W = "#F2EBE0"; // warm cream
+const D = "#0D0D0D"; // dark
+
+function SectionBlend({ from, to, height = 120 }: { from: string; to: string; height?: number }) {
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        height: `${height}px`,
+        marginTop: `-${height / 2}px`,
+        background: `linear-gradient(to bottom, ${from}, ${to})`,
+        position: "relative",
+        zIndex: 2,
+        pointerEvents: "none",
+      }}
+    />
+  );
+}
+
 function handlePlaceholder(e: React.MouseEvent, label: string) {
   e.preventDefault();
   toast.info(`${label} — Coming Soon`, {
@@ -84,8 +104,10 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionBlend from={C} to={D} />
+
       {/* ── VIDEO STATEMENT ── */}
-      <section className="flex flex-col md:flex-row min-h-[60vh]">
+      <section className="flex flex-col md:flex-row min-h-[60vh] bg-[#0D0D0D]">
         {/* Left: dramatic text on black */}
         <div className="w-full md:w-1/2 bg-[#0D0D0D] flex items-center justify-center px-10 md:px-16 lg:px-24 py-16 md:py-0">
           <p className="font-headline text-3xl md:text-4xl lg:text-5xl xl:text-6xl italic leading-[1.1] text-[#FAF7F2] fade-in-up">
@@ -106,6 +128,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <SectionBlend from={D} to={W} />
 
       {/* ── SIGNATURE KEYNOTE ── */}
       <section className="bg-[#F2EBE0] py-24 md:py-32 px-6 md:px-12">
@@ -142,6 +166,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SectionBlend from={W} to={C} height={60} />
 
       {/* ── KEYNOTES SECTION ── */}
       <section id="keynotes" className="py-24 md:py-32 px-6 md:px-12 bg-[#FAF7F2]">
@@ -247,6 +273,8 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionBlend from={C} to={D} />
+
       {/* ── BENEFITS STRIP ── */}
       <section className="bg-[#0D0D0D] text-white py-16 md:py-20 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto">
@@ -267,6 +295,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SectionBlend from={D} to={C} />
 
       {/* ── BIO ── */}
       <section id="bio" className="py-24 md:py-36 px-6 md:px-12 bg-[#FAF7F2]">
@@ -364,6 +394,8 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionBlend from={C} to={W} height={60} />
+
       {/* ── TESTIMONIAL ── */}
       <section id="testimonial" className="py-24 md:py-32 bg-[#F2EBE0] overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 md:px-8 space-y-20">
@@ -410,6 +442,8 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionBlend from={W} to={D} />
+
       {/* ── MANIFESTO ── */}
       <section id="manifesto" className="bg-[#0D0D0D] text-[#FAF7F2] py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -430,6 +464,8 @@ export default function Home() {
         </div>
       </section>
 
+      <SectionBlend from={D} to={W} />
+
       {/* ── FINAL CTA ── */}
       <section className="py-32 md:py-40 px-6 md:px-10 text-center relative overflow-hidden bg-[#F2EBE0]">
         <div className="max-w-3xl mx-auto fade-in-up">
@@ -446,6 +482,8 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      <SectionBlend from={W} to={D} />
 
       <Footer />
     </div>
