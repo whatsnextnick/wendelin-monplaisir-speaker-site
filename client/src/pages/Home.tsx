@@ -47,10 +47,11 @@ const C = "#FAF7F2"; // cream
 const W = "#F2EBE0"; // warm cream
 const D = "#0D0D0D"; // dark
 
-function SectionBlend({ from, to, height = 120 }: { from: string; to: string; height?: number }) {
+function SectionBlend({ from, to, height = 120, className = "" }: { from: string; to: string; height?: number; className?: string }) {
   return (
     <div
       aria-hidden="true"
+      className={className}
       style={{
         height: `${height}px`,
         marginTop: `-${height / 2}px`,
@@ -223,7 +224,7 @@ export default function Home() {
             </div>
           </div>
 
-          <SectionBlend from={C} to={W} height={60} />
+          <SectionBlend from={C} to={W} height={60} className="-mx-6 md:-mx-12" />
 
           {/* Keynote 02 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-24 md:py-32">
