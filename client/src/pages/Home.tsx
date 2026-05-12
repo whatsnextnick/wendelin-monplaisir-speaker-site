@@ -95,7 +95,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
             <button
               onClick={() => setBookingOpen(true)}
-              className="bg-[#1C1C2E] text-[#FAF7F2] px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#A8A8BC] hover:text-[#1A1A1A] active:scale-95">
+              className="btn-gold px-10 py-5 font-label text-[11px] uppercase">
               Book Wendelin
             </button>
             <button
@@ -504,7 +504,7 @@ export default function Home() {
           </p>
           <button
             onClick={() => setBookingOpen(true)}
-            className="bg-[#1C1C2E] text-[#FAF7F2] px-12 py-6 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#A8A8BC] hover:text-[#1A1A1A] active:scale-95">
+            className="btn-gold px-12 py-6 font-label text-[11px] uppercase">
             Book Wendelin Now
           </button>
         </div>

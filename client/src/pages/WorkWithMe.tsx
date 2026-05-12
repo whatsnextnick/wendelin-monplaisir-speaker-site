@@ -166,7 +166,7 @@ export default function WorkWithMe() {
               </div>
               <button
                 onClick={() => toast.info("Keynote Booking", { description: "Please use the inquiry form below to book this keynote." })}
-                className="w-full bg-[#1C1C2E] text-[#FAF7F2] py-5 font-label uppercase tracking-widest hover:bg-[#A8A8BC] hover:text-[#1A1A1A] transition-all active:scale-95"
+                className="w-full btn-gold py-5 font-label uppercase"
               >
                 Book Keynote
               </button>
@@ -331,7 +331,7 @@ export default function WorkWithMe() {
             <button
               type="submit"
               disabled={submitting}
-              className="bg-[#1C1C2E] text-[#FAF7F2] px-12 py-5 font-label font-bold text-sm tracking-widest uppercase hover:bg-[#A8A8BC] hover:text-[#1A1A1A] transition-all duration-300 shadow-lg disabled:opacity-60 disabled:cursor-not-allowed active:scale-95"
+              className="btn-gold px-12 py-5 font-label text-sm uppercase disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {submitting ? "Sending..." : "Send Inquiry"}
             </button>

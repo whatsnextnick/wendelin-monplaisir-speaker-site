@@ -109,7 +109,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
         {/* CTA Button */}
         <button
           onClick={onBookClick}
-          className="bg-[#1C1C2E] text-[#FAF7F2] px-8 py-3 md:px-10 md:py-4 font-label font-medium text-[10px] md:text-[11px] tracking-widest uppercase transition-all duration-300 hover:bg-[#A8A8BC] hover:text-[#1A1A1A] active:scale-95">
+          className="btn-gold px-8 py-3 md:px-10 md:py-4 font-label text-[10px] md:text-[11px] uppercase">
           Book Wendelin
         </button>
       </div>

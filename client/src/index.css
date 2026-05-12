@@ -196,4 +196,35 @@
   .mobile-menu.open {
     transform: translateX(0);
   }
+
+  /* Gold gradient CTA button */
+  .btn-gold {
+    background: linear-gradient(
+      to bottom,
+      #c8a84b 0%,
+      #f5e17a 25%,
+      #d4a017 50%,
+      #f0c040 75%,
+      #a67c00 100%
+    );
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    transition: background 0.3s ease, transform 0.15s ease;
+  }
+  .btn-gold:hover {
+    background: linear-gradient(
+      to bottom,
+      #d4b05a 0%,
+      #ffe98a 25%,
+      #e0b030 50%,
+      #f5cc55 75%,
+      #b08800 100%
+    );
+  }
+  .btn-gold:active {
+    transform: scale(0.97);
+  }
 }
