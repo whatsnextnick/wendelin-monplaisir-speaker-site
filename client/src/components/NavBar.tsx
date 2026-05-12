@@ -70,8 +70,8 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
         hidden ? "-translate-y-full" : "translate-y-0"
       } ${
         isScrolled
-          ? "bg-[#0D0D0D]/60 backdrop-blur-md border-b border-[#A8A8BC]/10"
-          : "bg-[#0D0D0D]/30 backdrop-blur-sm"
+          ? "bg-[#0D0D0D]/85 backdrop-blur-md border-b border-[#A8A8BC]/10"
+          : "bg-[#0D0D0D]/65 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-3 flex items-center justify-between">
