@@ -8,10 +8,23 @@ import { useState, useEffect } from "react";
 export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
   const [activeSection, setActiveSection] = useState("hero");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
+    let lastY = window.scrollY;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentY = window.scrollY;
+      const delta = currentY - lastY;
+
+      setIsScrolled(currentY > 50);
+      // Hide when scrolling down past 80px; reveal when scrolling up
+      if (currentY > 80) {
+        setHidden(delta > 0);
+      } else {
+        setHidden(false);
+      }
+      lastY = currentY;
 
       // Detect active section
       const sections = ["hero", "keynotes", "bio", "testimonial", "manifesto"];
@@ -27,7 +40,7 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -49,10 +62,12 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        hidden ? "-translate-y-full" : "translate-y-0"
+      } ${
         isScrolled
-          ? "bg-[#0D0D0D]/98 backdrop-blur-md border-b border-[#A8A8BC]/10 shadow-lg"
-          : "bg-[#0D0D0D]/80 backdrop-blur-sm"
+          ? "bg-[#0D0D0D]/60 backdrop-blur-md border-b border-[#A8A8BC]/10"
+          : "bg-[#0D0D0D]/30 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-3 flex items-center justify-between">
