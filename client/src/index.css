@@ -200,7 +200,7 @@
   /* Gold gradient CTA button */
   .btn-gold {
     background: linear-gradient(
-      to bottom,
+      to right,
       #c8a84b 0%,
       #f5e17a 25%,
       #d4a017 50%,
@@ -216,7 +216,7 @@
   }
   .btn-gold:hover {
     background: linear-gradient(
-      to bottom,
+      to right,
       #d4b05a 0%,
       #ffe98a 25%,
       #e0b030 50%,
