@@ -11,20 +11,21 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    let lastY = window.scrollY;
+    let timer: ReturnType<typeof setTimeout>;
 
     const handleScroll = () => {
       const currentY = window.scrollY;
-      const delta = currentY - lastY;
-
       setIsScrolled(currentY > 50);
-      // Hide when scrolling down past 80px; reveal when scrolling up
+
+      // Hide immediately on any scroll; reveal 800ms after scrolling stops
       if (currentY > 80) {
-        setHidden(delta > 0);
+        setHidden(true);
+        clearTimeout(timer);
+        timer = setTimeout(() => setHidden(false), 800);
       } else {
         setHidden(false);
+        clearTimeout(timer);
       }
-      lastY = currentY;
 
       // Detect active section
       const sections = ["hero", "keynotes", "bio", "testimonial", "manifesto"];
@@ -41,7 +42,10 @@ export default function NavBar({ onBookClick }: { onBookClick?: () => void }) {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timer);
+    };
   }, []);
 
   const scrollToSection = (id: string) => {
