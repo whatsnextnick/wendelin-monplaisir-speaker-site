@@ -30,6 +30,19 @@ function useScrollFadeIn() {
   return ref;
 }
 
+const imgBlend: React.CSSProperties = {
+  WebkitMaskImage: [
+    "linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%)",
+    "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+  ].join(", "),
+  WebkitMaskComposite: "destination-in",
+  maskImage: [
+    "linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%)",
+    "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+  ].join(", "),
+  maskComposite: "intersect",
+};
+
 const C = "#FAF7F2"; // cream
 const W = "#F2EBE0"; // warm cream
 const D = "#0D0D0D"; // dark
@@ -157,11 +170,13 @@ export default function Home() {
             </div>
             {/* Right: Image */}
             <div className="fade-in-up hidden md:flex items-center justify-center">
-              <img
-                src="/nails.png"
-                alt="Burn It. Build It. — Woman's elegantly manicured nails"
-                className="w-full h-auto max-w-md object-cover rounded-lg shadow-lg"
-              />
+              <div className="w-full max-w-md h-[420px]" style={imgBlend}>
+                <img
+                  src="/nails.png"
+                  alt="Burn It. Build It. — Woman's elegantly manicured nails"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -197,22 +212,26 @@ export default function Home() {
               </div>
             </div>
             <div className="fade-in-up hidden md:flex items-center justify-center">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_8w3vx08w3vx08w3v_20f006b1.png"
-                alt="Corporate Leadership — Executive boardroom with city skyline"
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
+              <div className="w-full h-96" style={imgBlend}>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_8w3vx08w3vx08w3v_20f006b1.png"
+                  alt="Corporate Leadership — Executive boardroom with city skyline"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
           {/* Keynote 02 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-24 md:py-32">
             <div className="fade-in-up hidden md:flex items-center justify-center order-last md:order-first">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_vknigtvknigtvkni_f4bcb308.webp"
-                alt="The Cost of Being Unbreakable — Woman in spotlight"
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
+              <div className="w-full h-96" style={imgBlend}>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_vknigtvknigtvkni_f4bcb308.webp"
+                  alt="The Cost of Being Unbreakable — Woman in spotlight"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
@@ -263,11 +282,13 @@ export default function Home() {
               </div>
             </div>
             <div className="fade-in-up hidden md:flex items-center justify-center">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_niwje0niwje0niwj_f06a90f0.webp"
-                alt="Break the Pattern. Build the Power. — Microphone on stage with audience"
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
+              <div className="w-full h-96" style={imgBlend}>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_niwje0niwje0niwj_f06a90f0.webp"
+                  alt="Break the Pattern. Build the Power. — Microphone on stage with audience"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
