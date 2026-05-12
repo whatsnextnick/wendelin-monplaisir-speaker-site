@@ -117,8 +117,6 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionBlend from={C} to={D} />
-
       {/* ── VIDEO STATEMENT ── */}
       <section className="flex flex-col md:flex-row min-h-[60vh] bg-[#0D0D0D]">
         {/* Left: dramatic text on black */}
