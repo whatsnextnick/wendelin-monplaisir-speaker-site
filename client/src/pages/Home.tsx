@@ -273,17 +273,20 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
-                Break the Pattern. <span className="italic font-normal">Build the Power.</span>
+                Speak Into <span className="italic font-normal">Existence</span>
               </h3>
               <p className="text-lg text-[#1A1A1A] mb-6 leading-relaxed">
-                Identify the Root Triggers Controlling Your Life, Release Outdated Identities, and Rewire Your Mindset to Create What You Actually Want
+                Command the Room. Rewrite Perception. Become Unforgettable.
+              </p>
+              <p className="text-base text-[#1A1A1A] mb-6 leading-relaxed">
+                How High-Responsibility Professionals Break Internal Limitations, Reclaim Their Presence, and Communicate with a Level of Confidence That Elevates Leadership, Influence, and Execution.
               </p>
               <p className="text-base text-[#1A1A1A] mb-8 leading-relaxed">
-                A powerful mindset-shifting experience that helps audiences uncover the root of their limitations and rebuild their thinking from a place of clarity and intention.
+                Designed for high-performing teams, leaders, and professionals, this keynote exposes the silent patterns that keep people playing small, over-editing themselves, and operating from burnout instead of authority — replacing them with confidence, ownership, presence, and decisive execution.
               </p>
               <div className="border-l-4 border-[#A8A8BC] pl-6 py-4 bg-[#F2EBE0] px-6">
                 <p className="text-base font-semibold text-[#1A1A1A]">
-                  ✓ Your audience will leave with the awareness and tools to break destructive cycles and consciously create the life they've been avoiding or delaying.
+                  ✓ Your team will identify what's limiting how they lead, communicate, and show up — and leave equipped to operate with greater clarity, confidence, accountability, and influence in every room they walk into… and every area of their lives.
                 </p>
               </div>
             </div>
