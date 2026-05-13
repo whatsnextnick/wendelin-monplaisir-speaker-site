@@ -143,49 +143,6 @@ export default function Home() {
 
       <SectionBlend from={D} to={W} />
 
-      {/* ── SIGNATURE KEYNOTE ── */}
-      <section className="bg-[#F2EBE0] py-24 md:py-32 px-6 md:px-12">
-        <div className="max-w-screen-2xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-            {/* Left: Content */}
-            <div className="max-w-3xl fade-in-up">
-              <span className="text-sm font-label uppercase tracking-widest text-[#A8A8BC] font-bold mb-4 block">
-                Signature Framework
-              </span>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold mb-3 leading-tight">
-                Burn It. Build It.
-              </h2>
-              <p className="font-label text-sm tracking-widest uppercase text-[#A8A8BC] mb-8">
-                Powered by <em className="not-uppercase italic font-normal tracking-normal">Breathe. Burn. Build.</em>
-              </p>
-              <p className="text-2xl md:text-3xl italic text-[#1A1A1A] mb-8 leading-relaxed">
-                Release What Broke You. Claim What Will Define You
-              </p>
-              <p className="text-lg text-[#1A1A1A] leading-relaxed mb-8">
-                This is Wendelin's signature framework — a powerful, no-excuses methodology that walks audiences through releasing the past, reclaiming their identity, and intentionally building their future.
-              </p>
-              <div className="border-l-4 border-[#A8A8BC] pl-8 py-4">
-                <p className="text-lg font-semibold text-[#1A1A1A]">
-                  ✓ Your audience will walk away with the clarity and courage to release what's holding them back and take ownership of what comes next.
-                </p>
-              </div>
-            </div>
-            {/* Right: Image */}
-            <div className="fade-in-up hidden md:flex items-center justify-center">
-              <div className="w-full max-w-md h-[420px]" style={imgBlend}>
-                <img
-                  src="/nails.png"
-                  alt="Burn It. Build It. — Woman's elegantly manicured nails"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <SectionBlend from={W} to={C} height={60} />
-
       {/* ── KEYNOTES SECTION ── */}
       <section id="keynotes" className="py-24 md:py-32 px-6 md:px-12 bg-[#FAF7F2]">
         <div className="max-w-screen-2xl mx-auto">
@@ -199,21 +156,24 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
-                If You Don't Own It, <span className="italic font-normal">It Owns You</span>
+                Speak Into <span className="italic font-normal">Existence</span>
               </h3>
               <p className="text-lg text-[#1A1A1A] mb-6 leading-relaxed">
-                How High-Responsibility Professionals Break Hidden Burnout Cycles, Reclaim Authority, and Execute at a Higher Level Through Radical Ownership
+                Command the Room. Rewrite Perception. Become Unforgettable.
+              </p>
+              <p className="text-base text-[#1A1A1A] mb-6 leading-relaxed">
+                How High-Responsibility Professionals Break Internal Limitations, Reclaim Their Presence, and Communicate with a Level of Confidence That Elevates Leadership, Influence, and Execution.
               </p>
               <p className="text-base text-[#1A1A1A] mb-8 leading-relaxed">
-                Designed for high-performing teams and leaders, this keynote exposes the hidden patterns that drive burnout, disengagement, and stalled performance — and replaces them with clarity, ownership, and execution.
+                Designed for high-performing teams, leaders, and professionals, this keynote exposes the silent patterns that keep people playing small, over-editing themselves, and operating from burnout instead of authority — replacing them with confidence, ownership, presence, and decisive execution.
               </p>
               <div className="border-l-4 border-[#A8A8BC] pl-6 py-4 bg-[#F2EBE0] px-6">
                 <p className="text-base font-semibold text-[#1A1A1A]">
-                  ✓ Your team will identify what's silently limiting performance and leave equipped to operate with clarity, accountability, and elevated execution.
+                  ✓ Your team will identify what's limiting how they lead, communicate, and show up — and leave equipped to operate with greater clarity, confidence, accountability, and influence in every room they walk into… and every area of their lives.
                 </p>
               </div>
             </div>
-            <div className="fade-in-up hidden md:flex items-center justify-center">
+            <div className="fade-in-up hidden md:flex flex-col items-center gap-6">
               <div className="w-full h-96" style={imgBlend}>
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_8w3vx08w3vx08w3v_20f006b1.png"
@@ -221,6 +181,11 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="btn-gold px-8 py-3 md:px-10 md:py-4 font-label text-[10px] md:text-[11px] uppercase">
+                Book Wendelin
+              </button>
             </div>
           </div>
 
@@ -228,7 +193,7 @@ export default function Home() {
 
           {/* Keynote 02 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-24 md:py-32">
-            <div className="fade-in-up hidden md:flex items-center justify-center order-last md:order-first">
+            <div className="fade-in-up hidden md:flex flex-col items-center gap-6 order-last md:order-first">
               <div className="w-full h-96" style={imgBlend}>
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_vknigtvknigtvkni_f4bcb308.webp"
@@ -236,6 +201,11 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="btn-gold px-8 py-3 md:px-10 md:py-4 font-label text-[10px] md:text-[11px] uppercase">
+                Book Wendelin
+              </button>
             </div>
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
@@ -274,31 +244,39 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
-                Speak Into <span className="italic font-normal">Existence</span>
+                Burn It. <span className="italic font-normal">Build It.</span>
               </h3>
+              <p className="font-label text-[11px] tracking-[0.25em] uppercase text-[#A8A8BC] mb-6">
+                Powered by Breathe. Burn. Build.
+              </p>
               <p className="text-lg text-[#1A1A1A] mb-6 leading-relaxed">
-                Command the Room. Rewrite Perception. Become Unforgettable.
+                Release What Broke You. Claim What Will Define You.
               </p>
               <p className="text-base text-[#1A1A1A] mb-6 leading-relaxed">
-                How High-Responsibility Professionals Break Internal Limitations, Reclaim Their Presence, and Communicate with a Level of Confidence That Elevates Leadership, Influence, and Execution.
+                Wendelin Monplaisir's signature framework is a powerful, high-impact experience designed to help audiences identify destructive patterns, release limiting identities, and intentionally rebuild with clarity, confidence, and purpose.
               </p>
               <p className="text-base text-[#1A1A1A] mb-8 leading-relaxed">
-                Designed for high-performing teams, leaders, and professionals, this keynote exposes the silent patterns that keep people playing small, over-editing themselves, and operating from burnout instead of authority — replacing them with confidence, ownership, presence, and decisive execution.
+                Blending mindset transformation, emotional intelligence, and actionable personal development, this keynote challenges attendees to stop operating from survival mode and start leading their lives with ownership and intention.
               </p>
               <div className="border-l-4 border-[#A8A8BC] pl-6 py-4 bg-[#F2EBE0] px-6">
                 <p className="text-base font-semibold text-[#1A1A1A]">
-                  ✓ Your team will identify what's limiting how they lead, communicate, and show up — and leave equipped to operate with greater clarity, confidence, accountability, and influence in every room they walk into… and every area of their lives.
+                  ✓ Your audience will walk away with the awareness, tools, and courage to break the cycles holding them back and consciously build what comes next.
                 </p>
               </div>
             </div>
-            <div className="fade-in-up hidden md:flex items-center justify-center">
+            <div className="fade-in-up hidden md:flex flex-col items-center gap-6">
               <div className="w-full h-96" style={imgBlend}>
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/Gemini_Generated_Image_niwje0niwje0niwj_f06a90f0.webp"
-                  alt="Break the Pattern. Build the Power. — Microphone on stage with audience"
+                  src="/nails.png"
+                  alt="Burn It. Build It. — Hand holding a lit match"
                   className="w-full h-full object-cover"
                 />
               </div>
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="btn-gold px-8 py-3 md:px-10 md:py-4 font-label text-[10px] md:text-[11px] uppercase">
+                Book Wendelin
+              </button>
             </div>
           </div>
         </div>
@@ -375,50 +353,6 @@ export default function Home() {
                   "Her message is bold. Her presence is undeniable. Her impact is lasting."
                 </p>
               </blockquote>
-            </div>
-          </div>
-
-          {/* Framework */}
-          <div className="bg-[#0D0D0D] text-[#FAF7F2] px-8 md:px-14 py-14 mb-20 fade-in-up">
-            <p className="font-label text-[11px] tracking-[0.3em] uppercase text-[#A8A8BC] mb-6">The Framework</p>
-            <h3 className="font-headline text-3xl md:text-4xl mb-10">BREATHE. BURN. BUILD.</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { word: "BREATHE", desc: "Give yourself grace. Acknowledge where you are." },
-                { word: "BURN", desc: "Release outdated identities, narratives, and emotional weight." },
-                { word: "BUILD", desc: "Intentionally design a life aligned with your truth and power." },
-              ].map(({ word, desc }) => (
-                <div key={word} className="border-t border-[#A8A8BC]/30 pt-6">
-                  <p className="font-label font-bold text-[#A8A8BC] tracking-widest text-sm mb-3">{word}</p>
-                  <p className="text-[#FAF7F2]/70 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Who she speaks to */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center fade-in-up">
-            <div>
-              <p className="font-label text-[11px] tracking-[0.3em] uppercase text-[#A8A8BC] mb-6">She Speaks Directly To Women Who</p>
-              <ul className="space-y-4">
-                {[
-                  "Appear unbreakable — but feel broken internally",
-                  "Are exhausted from carrying everything and everyone",
-                  "Are ready to release what no longer serves them",
-                  "Want to build a life of clarity, confidence, and true ownership",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4 text-[#1A1A1A] text-lg leading-snug">
-                    <span className="text-[#A8A8BC] mt-1 shrink-0">—</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="text-center md:text-left">
-              <p className="font-headline italic text-4xl md:text-5xl text-[#1A1A1A] leading-tight">
-                "If you don't own it,{" "}
-                <span className="text-[#A8A8BC]">it owns you.</span>"
-              </p>
             </div>
           </div>
 
