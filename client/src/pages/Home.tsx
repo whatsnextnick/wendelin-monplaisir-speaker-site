@@ -193,9 +193,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32">
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#A8A8BC]/30 font-bold">01</span>
-                <span className="bg-[#A8A8BC]/10 text-[#A8A8BC] px-4 py-2 text-xs font-bold uppercase tracking-widest">
-                  Corporate Leadership
+                <span className="text-6xl font-headline italic font-bold text-gold-gradient">01</span>
+                <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                  <span className="text-gold-gradient">Corporate Leadership</span>
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
@@ -239,9 +239,9 @@ export default function Home() {
             </div>
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#A8A8BC]/30 font-bold">02</span>
-                <span className="bg-[#A8A8BC]/10 text-[#A8A8BC] px-4 py-2 text-xs font-bold uppercase tracking-widest">
-                  Women's Conferences
+                <span className="text-6xl font-headline italic font-bold text-gold-gradient">02</span>
+                <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                  <span className="text-gold-gradient">Women's Conferences</span>
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
@@ -268,9 +268,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div className="fade-in-up">
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic text-[#A8A8BC]/30 font-bold">03</span>
-                <span className="bg-[#A8A8BC]/10 text-[#A8A8BC] px-4 py-2 text-xs font-bold uppercase tracking-widest">
-                  Mindset & Development
+                <span className="text-6xl font-headline italic font-bold text-gold-gradient">03</span>
+                <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
+                  <span className="text-gold-gradient">Mindset & Development</span>
                 </span>
               </div>
               <h3 className="text-4xl md:text-5xl font-headline font-bold mb-6 leading-tight">
