@@ -93,15 +93,15 @@ export default function Home() {
           <p className="text-lg md:text-xl text-[#1A1A1A] leading-relaxed max-w-2xl mb-8 fade-in-up">
             Wendelin Monplaisir delivers bold, transformative keynotes that challenge high-functioning women and professionals to break burnout cycles, reclaim their power, and build a life by design.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
+          <div className="flex flex-col lg:flex-row gap-4 fade-in-up">
             <button
               onClick={() => setBookingOpen(true)}
-              className="btn-gold px-10 py-5 font-label text-[11px] uppercase">
+              className="btn-gold whitespace-nowrap px-8 py-4 sm:px-10 sm:py-5 font-label text-[11px] uppercase">
               Book Wendelin
             </button>
             <button
               onClick={(e) => handlePlaceholder(e, "View Keynotes")}
-              className="border border-[#1A1A1A]/20 text-[#1A1A1A] px-10 py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:border-[#1A1A1A] hover:bg-[#A8A8BC]/10"
+              className="whitespace-nowrap border border-[#1A1A1A]/20 text-[#1A1A1A] px-8 py-4 sm:px-10 sm:py-5 font-label font-medium text-[11px] tracking-widest uppercase transition-all duration-300 hover:border-[#1A1A1A] hover:bg-[#A8A8BC]/10"
             >
               View Keynotes
             </button>
