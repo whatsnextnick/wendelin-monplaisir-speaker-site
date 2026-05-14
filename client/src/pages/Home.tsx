@@ -144,13 +144,13 @@ export default function Home() {
       <SectionBlend from={D} to={W} />
 
       {/* ── KEYNOTES SECTION ── */}
-      <section id="keynotes" className="py-24 md:py-32 px-6 md:px-12 bg-[#FAF7F2]">
+      <section id="keynotes" className="py-12 md:py-32 px-6 md:px-12 bg-[#FAF7F2]">
         <div className="max-w-screen-2xl mx-auto">
           {/* Keynote 01 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 md:mb-32">
             <div className="fade-in-up">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic font-bold text-gold-gradient">01</span>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3 mb-6 md:mb-8">
+                <span className="text-5xl md:text-6xl font-headline italic font-bold text-gold-gradient">01</span>
                 <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   <span className="text-gold-gradient">Corporate Leadership</span>
                 </span>
@@ -192,7 +192,7 @@ export default function Home() {
           <SectionBlend from={C} to={W} height={60} className="-mx-6 md:-mx-12" />
 
           {/* Keynote 02 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start mb-24 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-24 md:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 md:mb-32 bg-[#F2EBE0] -mx-6 md:-mx-12 px-6 md:px-12 py-12 md:py-32">
             <div className="fade-in-up hidden md:flex flex-col items-center gap-6 order-last md:order-first">
               <div className="w-full h-96" style={imgBlend}>
                 <img
@@ -208,8 +208,8 @@ export default function Home() {
               </button>
             </div>
             <div className="fade-in-up">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic font-bold text-gold-gradient">02</span>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3 mb-6 md:mb-8">
+                <span className="text-5xl md:text-6xl font-headline italic font-bold text-gold-gradient">02</span>
                 <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   <span className="text-gold-gradient">Women's Conferences</span>
                 </span>
@@ -235,10 +235,10 @@ export default function Home() {
           </div>
 
           {/* Keynote 03 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
             <div className="fade-in-up">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="text-6xl font-headline italic font-bold text-gold-gradient">03</span>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3 mb-6 md:mb-8">
+                <span className="text-5xl md:text-6xl font-headline italic font-bold text-gold-gradient">03</span>
                 <span className="bg-[#0D0D0D] px-4 py-2 text-xs font-bold uppercase tracking-widest">
                   <span className="text-gold-gradient">Mindset & Development</span>
                 </span>
