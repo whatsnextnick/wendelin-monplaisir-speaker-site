@@ -308,20 +308,20 @@ export default function Home() {
       <SectionBlend from={D} to={C} />
 
       {/* ── BIO ── */}
-      <section id="bio" className="py-24 md:py-36 px-6 md:px-12 bg-[#FAF7F2]">
+      <section id="bio" className="py-12 md:py-36 px-6 md:px-12 bg-[#FAF7F2]">
         <div className="max-w-6xl mx-auto">
 
           {/* Header */}
-          <div className="mb-16 fade-in-up">
+          <div className="mb-10 md:mb-16 fade-in-up">
             <span className="font-label text-[11px] tracking-[0.3em] uppercase text-[#A8A8BC] mb-4 block">About Wendelin</span>
-            <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight max-w-3xl">
+            <h2 className="font-headline text-3xl md:text-5xl lg:text-6xl leading-tight max-w-3xl">
               Not just a speaker —<br /><span className="italic font-normal">a catalyst for identity reinvention.</span>
             </h2>
           </div>
 
           {/* Two-column: narrative + pull quotes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 mb-20">
-            <div className="space-y-6 fade-in-up">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 mb-12 md:mb-20">
+            <div className="space-y-5 md:space-y-6 fade-in-up">
               <p className="text-lg text-[#1A1A1A] leading-relaxed">
                 As a transformational speaker and Personal Development Strategist, Wendelin challenges women to confront the truth about what's controlling their lives — and equips them to take back their power through radical ownership.
               </p>
@@ -337,19 +337,19 @@ export default function Home() {
             </div>
 
             {/* Pull quotes */}
-            <div className="space-y-10 fade-in-up">
+            <div className="space-y-6 md:space-y-10 fade-in-up">
               <blockquote className="border-l-4 border-[#A8A8BC] pl-8 py-2">
-                <p className="font-headline italic text-2xl md:text-3xl text-[#1A1A1A] leading-snug">
+                <p className="font-headline italic text-xl md:text-3xl text-[#1A1A1A] leading-snug">
                   "What once required survival… she turned into strategy."
                 </p>
               </blockquote>
               <blockquote className="border-l-4 border-[#A8A8BC] pl-8 py-2">
-                <p className="font-headline italic text-2xl md:text-3xl text-[#1A1A1A] leading-snug">
+                <p className="font-headline italic text-xl md:text-3xl text-[#1A1A1A] leading-snug">
                   "Her breaking point became her turning point."
                 </p>
               </blockquote>
               <blockquote className="border-l-4 border-[#A8A8BC] pl-8 py-2">
-                <p className="font-headline italic text-2xl md:text-3xl text-[#1A1A1A] leading-snug">
+                <p className="font-headline italic text-xl md:text-3xl text-[#1A1A1A] leading-snug">
                   "Her message is bold. Her presence is undeniable. Her impact is lasting."
                 </p>
               </blockquote>
@@ -362,8 +362,8 @@ export default function Home() {
       <SectionBlend from={C} to={W} height={60} />
 
       {/* ── TESTIMONIAL ── */}
-      <section id="testimonial" className="py-24 md:py-32 bg-[#F2EBE0] overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6 md:px-8 space-y-20">
+      <section id="testimonial" className="py-12 md:py-32 bg-[#F2EBE0] overflow-hidden">
+        <div className="max-w-5xl mx-auto px-6 md:px-8 space-y-12 md:space-y-20">
           {/* Testimonial 1 */}
           <div className="text-center relative fade-in-up">
             <span className="font-headline text-8xl text-[#A8A8BC]/10 absolute -top-8 left-1/2 -translate-x-1/2 select-none pointer-events-none">
