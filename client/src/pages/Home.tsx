@@ -81,7 +81,7 @@ export default function Home() {
       <NavBar onBookClick={() => setBookingOpen(true)} />
 
       {/* ── HERO ── */}
-      <section id="hero" className="min-h-screen flex flex-col md:flex-row items-stretch bg-[#FAF7F2] pt-20">
+      <section id="hero" className="min-h-screen flex flex-col md:flex-row items-stretch bg-[#FAF7F2] pt-20 md:pt-0">
         {/* Left: Content */}
         <div className="w-full md:w-1/2 px-8 md:px-16 lg:px-24 py-16 md:py-0 flex flex-col justify-center items-start">
           <span className="font-label text-[11px] tracking-[0.25em] uppercase text-[#A8A8BC] mb-6 fade-in-up">
@@ -108,9 +108,9 @@ export default function Home() {
           </div>
         </div>
         {/* Right: Image */}
-        <div className="w-full md:w-1/2 min-h-[55vw] md:min-h-screen relative overflow-hidden order-first md:order-last">
+        <div className="w-full md:w-1/2 min-h-[80vw] md:min-h-screen relative overflow-hidden order-first md:order-last">
           <img
-            className="absolute inset-0 w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+            className="absolute inset-0 top-8 md:top-0 w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663201602371/cS4nQ566iFS6DKVhdS5Vjw/pasted_file_qEBFHx_image_2b8c1b97.png"
             alt="Wendelin Monplaisir — Strategic Authority portrait"
           />
